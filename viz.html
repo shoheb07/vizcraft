@@ -1,0 +1,17 @@
+<div id="chart"></div>
+<script type="module">
+import { BarChart } from './src/charts/bar.js';
+
+const data = [
+  { label: 'A', value: 40 },
+  { label: 'B', value: 70 },
+  { label: 'C', value: 55 }
+];
+
+new BarChart('#chart', {
+  data,
+  width: 600,
+  height: 400,
+  animate: true
+});
+</script>
